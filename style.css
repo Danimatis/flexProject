@@ -1,76 +1,90 @@
 body {
   background-color: lightgreen;
+  margin: 0px;
 }
 
 .heading {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 250px;
   width: 100%;
   justify-content: center;
   box-sizing: border-box;
 }
 .flex {
-  align-items: center;
   display: flex;
+  align-self: center;
+  flex-grow: 100;
+  justify-content: space-around;
 }
 img {
   align-self: flex-start;
   width: 50px;
   height: 50px;
+  /* opacity: 50%; */
 }
 .heading {
   margin-bottom: 20px;
   background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_960_720.jpg);
   background-size: 100%;
 }
-
-.menu {
+.link {
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  margin-right: 15px;
-}
-
-/* ul,
-li {
-  display: inline-block;
-  vertical-align: middle;
+  width: 200px;
+  height: 25px;
+  background-color: beige;
+  border-radius: 95%;
+  justify-content: center;
+  align-items: center;
 }
 a {
   text-decoration: none;
-} */
+  color: black;
+  transition: all 1s;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15px;
+}
+
 a:hover {
-  color: aliceblue;
+  transition-delay: 0.2s;
+  color: black;
+  font-weight: bolder;
+  font-size: 24px;
 }
 .intro {
-  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   size: 50%;
   flex-grow: 100;
   transition: all 2s;
 }
 .intro:hover {
-  font-size: 35px;
+  /* font-size: 35px; */
   cursor: default;
 }
 h1 {
   text-transform: capitalize;
   text-align: center;
   color: azure;
-  align-self: center;
+  margin: 15px;
 }
 .gallery {
   max-width: 100%;
-  margin: 15px;
   display: flex;
+  align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 .pic {
+  flex-grow: 1;
   margin: 15px;
-  width: 250px;
+  /* width: 250px; */
   height: 250px;
-  size: 25vh 25vw;
   transition: all 0.5s;
 }
 .pic:hover {
