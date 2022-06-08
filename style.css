@@ -1,0 +1,94 @@
+body {
+  background-color: lightgreen;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  height: 250px;
+  width: 100%;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.flex {
+  align-items: center;
+  display: flex;
+}
+img {
+  align-self: flex-start;
+  width: 50px;
+  height: 50px;
+}
+.heading {
+  margin-bottom: 20px;
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171_960_720.jpg);
+  background-size: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: 15px;
+}
+
+/* ul,
+li {
+  display: inline-block;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+} */
+a:hover {
+  color: aliceblue;
+}
+.intro {
+  align-self: center;
+  size: 50%;
+  flex-grow: 100;
+  transition: all 2s;
+}
+.intro:hover {
+  font-size: 35px;
+  cursor: default;
+}
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  color: azure;
+  align-self: center;
+}
+.gallery {
+  max-width: 100%;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.pic {
+  margin: 15px;
+  width: 250px;
+  height: 250px;
+  size: 25vh 25vw;
+  transition: all 0.5s;
+}
+.pic:hover {
+  opacity: 75%;
+}
+
+th,
+td {
+  text-align: center;
+  border: 2px solid black;
+}
+.chart {
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+}
+table {
+  align-self: center;
+  border-style: outset 5px;
+  border-collapse: collapse;
+}
