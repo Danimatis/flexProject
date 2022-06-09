@@ -31,7 +31,7 @@ img {
 .link {
   flex-shrink: 1;
   display: flex;
-  width: 15vw;
+  width: 25%;
   height: 25px;
   background-color: beige;
   border-radius: 95%;
@@ -117,19 +117,35 @@ td {
 .price {
   color: red;
 }
-.chart {
-  display: flex;
 
+.chart {
   font-size: 3vw;
   /* justify-content: center; */
 }
+
+.chart div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 49%;
+
+}
+
 table {
   border-collapse: collapse;
+  /* flex-grow: 1; */
+  border-style: outset;
+  
+  /* display: inline-block; */
 }
 .text {
-  flex-grow: 1;
+  
+  /* flex-grow: 1; */
+  height: 100px;
+  font-size: 34px;
 }
-.background-shadow {
-  border-style: outset;
-  flex-grow: 10;
-}
+/* .background-shadow {
+  display: inline-block;} */
+  /* width: 30%; */
+  /* border-style: outset; */
+  /* flex-grow: 1;
+
